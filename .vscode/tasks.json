@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "Build",
-            "command": "/home/kursdeda/Desktop/DeekVM/.vscode/build.sh",
+            "command": "${workspaceFolder}/.vscode/.vscode/build.sh",
             "type": "shell",
             "args": [],
             "problemMatcher": ["$tsc"],
@@ -14,7 +14,18 @@
         },
         {
             "label": "Clear",
-            "command": "/home/kursdeda/Desktop/DeekVM/.vscode/clear.sh",
+            "command": "${workspaceFolder}/.vscode/clear.sh",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": ["$tsc"],
+            "presentation": {
+                "reveal": "always",
+            },
+            "group": "build"
+        },
+        {
+            "label": "Clear Build",
+            "command": "${workspaceFolder}/.vscode/clear.sh && ${workspaceFolder}/.vscode/build.sh",
             "type": "shell",
             "args": [],
             "problemMatcher": ["$tsc"],
@@ -25,7 +36,7 @@
         },
         {
             "label": "Run",
-            "command": "/home/kursdeda/Desktop/DeekVM/.vscode/run.sh",
+            "command": "${workspaceFolder}/.vscode/run.sh",
             "type": "shell",
             "args": [],
             "problemMatcher": ["$tsc"],

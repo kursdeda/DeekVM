@@ -1,1 +1,1 @@
-DeekVM - Виртуальная машина языка Deek
+DeekVM - The virtual machine of Deek Programming Language
